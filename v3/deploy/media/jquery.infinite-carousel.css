@@ -1,0 +1,36 @@
+#viewport{
+	width: 240px; /* Defines the size of the visible part of the carousel
+		Attention : if you only want to see plain items in the viewport,
+		the width of the viewport should take into account of :
+		- the items width
+		- the right and left padding of items
+		- the number of items you want to see in the viewport
+	 */
+	overflow:hidden; /* Hides extra elements, those outside the viewport area */
+	/* Fix for IE */
+	position:relative;
+}
+#viewport ul{
+	position: relative; /* Enables positionning of elements inside viewport */
+	padding: 0; /* Resets default - User Agent - style */
+	margin: 0;
+}
+#viewport li{
+	width: 100px; /* Defines the size of inner element */
+	height: 50px;
+	float: left; /* Places list items side by side*/
+	list-style: none; /* Resets default - User Agent - style */
+	
+	/* Cosmetic */
+	background-color: red;
+	margin: 0 1px;
+	padding: 10px;
+	text-align:center;
+}
+
+/* Cosmetic */
+#simplePrevious, #simpleNext{
+	cursor: pointer;
+	font-size: 0.8em;
+	text-decoration: underline;	
+}

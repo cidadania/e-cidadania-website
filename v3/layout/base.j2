@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
+	<head>
+		<title>{% block title %}e-cidadania | Plataforma de participación ciudadana{% endblock %}</title>
+		<link rel="stylesheet" type="text/css" href="{{ media_url('screen.css') }}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" />
+		<link rel="shortcut icon" href="{{ media_url('favicon.ico') }}" type="image/ico"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="Description" content="Plataforma de e-democracia y particiación ciudadana para realizar procesos participativos y desarollada en sotfware libre."/>
+		<meta name="Robots" content="all"/>
+		<script src="http://www.google.com/jsapi?key=ABQIAAAATqrYeRgzMa92HeAJ337iJhRWlTAuTwYT79cviOHriikXgTyaXRSApoqdJPf4dwJKYRnFn_s4iABNkg" type="text/javascript"></script>
+		<script type="text/javascript">
+			google.load("jquery", "1.6.3", {uncompressed:false});
+			google.load("jqueryui", "1.8.16", {uncompressed:false});
+		</script>
+		{% block extrajs %}{% endblock %}
+	</head>
+	<body>
+	
+	    <div class="topbar">
+	        <div class="fill">
+	            <div class="container">
+	                <a class="brand" href="#">e-<strong>cidadania</strong></a>
+	                <ul class="nav">
+	                    {% for item in menu %}
+	                        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+	                    {% endfor %}
+	                </ul>
+	                <ul class="nav secondary-nav" style="height:40px;">
+	                    <li><a href="http://twitter.com/#!/{{ tweet_via }}"><img src="{{ media_url('twitter.png') }}" /></a></li>
+	                    <li><a href="{{ facebook }}"><img src="{{ media_url('facebook.png') }}" /></a></li>
+	                    <!-- <li><a href="{{ identica }}"><img src="" /></a></li> -->
+	                    <li><a  href="{{ gplus }}"><img src="{{ media_url('gplus.png') }}" /></a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <div class="container">
+	        {% block container %}
+	        {% endblock %}
+	        <footer>
+	            e-cidadania. Copyright 2010-2012 Cidadania S. Coop. Galega
+	        </footer>
+	    </div>
+	   
+	</body>
+</html>
