@@ -30,12 +30,22 @@ context:
                 name: Historia
                 description: Historia
                 type: page
-                url: historia
+                url: history
             -
                 name: Descarga
                 description: Descargar e-cidadania
                 type: page
                 url: download
+            -
+                name: Desarrollo
+                description: Trac e-cidadania
+                type: page
+                url: http://dev.ecidadania.org
+            -
+                name: Documentación
+                description: Documentación de e-cidadania
+                type: page
+                url: http://docs.ecidadania.org
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2010-01-01 00:00:00

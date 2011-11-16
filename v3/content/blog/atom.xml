@@ -1,5 +1,4 @@
 ===
 title: BASIC blog full text feed
-extends: atom.j2
 listable: false
 ===

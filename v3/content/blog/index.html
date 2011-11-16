@@ -1,6 +1,34 @@
 ---
 title: e-cidadania blog
-extends: listing.j2
+extends: base.j2
 default_block: container
-listable: false
 ---
+
+{% from "macros.j2" import render_excerpt with context %}
+
+<div class="row" style="margin-top:70px;">
+    <div class="span16">
+        <h1>e-cidadania blog</h1>
+        <p>Aún estamos construyendo el blog, disculpen las molestias.</p>
+{% for node in page.node.walk %}
+    <ul>
+        {% for list_page in node.pages %}
+            {% if list_page.display_in_list %}
+                <li>
+                    <h1><a href="{{list_page.url}}">{{list_page.title}}</a></h1>
+                    {% if page.excerpt %}
+                        <div class="page-excerpt">
+                            {{ render_excerpt(list_page) }}
+                        </div>
+                        <div class="page-excerpt-footer">
+                            <a href="{{ list_page.url }}">Read More ...</a>
+                        </div>
+                    {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+    </div>
+</div>
