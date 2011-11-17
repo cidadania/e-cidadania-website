@@ -1,0 +1,45 @@
+---
+extends: base.j2
+default_block: container
+title: e-cidadania | Descargar
+---
+
+<h1 style="margin-top:70px;">Descargar e-cidadania</h1>
+
+<h2>Úsalo</h2>
+
+<div class="row">
+    <div class="span16">
+        <p>e-cidadania está disponible para todo el mundo desde la dirección:</p>
+        <p><a href="http://app.ecidadania.org">app.ecidadania.org</a></p>
+        <p>Desde ahí podrás participar en cualquier proceso o incluso crear el tuyo propio
+        sin ningún tipo de limitación, sin embargo, si quieres instalarlo por tu cuenta
+        también puedes hacerlo más abajo, en la sección <strong>Descárgalo</a></p>
+        <p>En cualquier caso, ¡la decisión es tuya!</p>
+    </div>
+</div>
+
+<h2>Descargalo</h2>
+
+<div class="row">
+    <div class="span8">
+        <h3>Versión estable</h3>
+        <p>La versión estable del rpograma es la que recomendamos para entornos
+           de producción e que necesiten cierta estabilidad.</p>
+        <p><strong>Última versión</strong>: 0.1 (BigEffort)</p>
+        <h6>Versiones anteriores</h6>
+        <ul>
+            <li>No hay versiones anteriores.</li>
+        </ul>
+    </div>
+    <div class="span8">
+        <h3>Versión de desarrollo</h3>
+        <p>La versión de desarrollo es para experimentar o seguir desarrollando
+           e-cidadania o por si quieres probar las ultimísimas características del
+           programa</p>
+        <p><strong>Repositorio</strong>: <a href="http://github.com/cidadania/e-cidadania">GitHub</a>,
+        <a href="http://gitorious.org/e-cidadania">Gitorious</a>,
+        <a href="http://repo.or.cz/w/e_cidadania.git">Repo.or.cz (Mirror)</a></p>
+        <p><strong>Nightly</strong>: 2011-11-16</p>
+    </div>
+</div>
