@@ -1,22 +1,2 @@
 {% extends "base.j2" %}
-
-{% from "macros.j2" import render_excerpt with context %}
-{% for node in page.node.walk %}
-    <ul>
-        {% for list_page in node.pages %}
-            {% if list_page.display_in_list %}
-                <li>
-                    <h1><a href="{{list_page.url}}">{{list_page.title}}</a></h1>
-                    {% if page.excerpt %}
-                        <div class="page-excerpt">
-                            {% render_excerpt list_page %}
-                        </div>
-                        <div class="page-excerpt-footer">
-                            <a href="{{ list_page.url }}">Read More ...</a>
-                        </div>
-                    {% endif %}
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-{% endfor %}   
+{% from "macros.j2" import render_excerpt with context  %}

@@ -20,7 +20,7 @@ context:
                 name: Inicio
                 description: Página de inicio
                 type: page
-                url: index.html
+                url: /
             -
                 name: Blog
                 description: Blog
@@ -48,23 +48,20 @@ context:
                 url: http://docs.ecidadania.org
 meta:
     nodemeta: meta.yaml
-    created: !!timestamp 2010-01-01 00:00:00
-    author: Lakshmi Vyasarajan
 sorter:
-    time:
+    publishingtime:
         attr:
-            - meta.created
-        reverse: true
+            meta.created
         filters:
             source.kind: html
-            meta.listable: true
-tagger:
-    sorter: time
-    archives:
-        blog:
-            source: blog
-            target: blog/tags
-            template: tagged_posts.j2
-            archive_extension: html
-            meta:
-                listable: false
+            meta.article: true
+#tagger:
+#    sorter: time
+#    archives:
+#        blog:
+#            source: blog
+#            target: blog/tags
+#            template: tagged_posts.j2
+#            archive_extension: html
+#            meta:
+#                listable: false

@@ -1,3 +1,27 @@
+/*
+    TWITTER BOOTSTRAP OVERRIDES
+*/
+
+/*.topbar-inner,.topbar .fill{*/
+/*    background-color: #3A3;*/
+/*    background-color: #33AA33;*/
+/*    background-repeat: repeat-x;*/
+/*    background-image: -khtml-gradient(linear, left top, left bottom, from(#33AA33), to(#33AA33));*/
+/*    background-image: -moz-linear-gradient(top, #33AA33, #33AA33);*/
+/*    background-image: -ms-linear-gradient(top, #33AA33, #33AA33);*/
+/*    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33AA33), color-stop(100%, #33AA33));*/
+/*    background-image:-webkit-linear-gradient(top, #33AA33, #33AA33);*/
+/*    background-image:-o-linear-gradient(top, #33AA33, #33AA33);*/
+/*    background-image:linear-gradient(top, #33AA33, #33AA33);*/
+/*    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33AA33', endColorstr='#33AA33', GradientType=0);*/
+/*    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
+/*    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
+/*    box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*
+    END OVERRIDES
+*/
 .partners {
     background: whiteSmoke;
     padding: 30px;
@@ -10,4 +34,9 @@
 
 .partners img {
     margin: 10px;
+}
+
+.social {
+    float: right;
+    display: inline;
 }

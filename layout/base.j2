@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
 	<head>
 		<title>{% block title %}e-cidadania | Plataforma de participación ciudadana{% endblock %}</title>
-		<link rel="stylesheet" type="text/css" href="{{ media_url('screen.css') }}" media="screen" />
 		<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="{{ media_url('screen.css') }}" media="screen" />
 		<link rel="shortcut icon" href="{{ media_url('favicon.ico') }}" type="image/ico"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="Description" content="Plataforma de e-democracia y particiación ciudadana para realizar procesos participativos y desarollada en sotfware libre."/>
@@ -25,6 +25,13 @@
 	                    {% for item in menu %}
 	                        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
 	                    {% endfor %}
+	                    <form name="selectors" action="" class="pull-left" style="text-align: center;">
+                            <select class="small" id="language">
+                                <option value="es">Español
+                                <option value="en">English
+                                <option value="gl">Galego
+                            </select>
+                        </form>
 	                </ul>
 	                <ul class="nav secondary-nav" style="height:40px;">
 	                    <li><a href="http://twitter.com/#!/{{ tweet_via }}"><img src="{{ media_url('twitter.png') }}" /></a></li>
@@ -44,7 +51,7 @@
 	    <footer style="background:#FAFAFA;padding-bottom:10px;border-bottom:1px solid #EEE;margin-bottom:15px;">
 	        <div class="row" style="margin:auto;">
 	            
-	            <div class="span4 offset3">
+	            <div class="span4 offset8">
 	                <img src="{{ media_url('logo.png') }}" /><br />
 	            </div>
 	            
@@ -56,23 +63,24 @@
   	                        Historia<br />
   	                        Descargas<br />
   	                        Desarrollo<br />
-	                    </adress>
-	                </div>
-	                <div class="span4">
-	                    <strong>Contacto</strong><br />
-	                    Lere leré<br />
-	                </div>
-	                <div class="span4">
-	                    <strong>Otro wiget</strong><br />
-	                    Algo tiene que ir aquí, no?
-	                </div>
+	                </adress>
+	            </div>
+	            
+	            <div class="span4">
+	                <strong>Contacto</strong><br />
+	                Lere leré<br />
+	            </div>
+	            
+	            <div class="span4">
+	                <strong>Otro wiget</strong><br />
+	                Algo tiene que ir aquí, no?
 	            </div>
 	       </div>
 	   </footer>
 	   
 	   <div class="row">
-	       <div class="span10 offset3">
-	           <p>Hosteado por <a href="http://dreamhost.com">DreamHost</a>. Creado con <a href="https://github.com/hyde/hyde">Hyde 0.8</a></p>
+	       <div class="span10 offset8">
+	           <p>Hosteado por <a href="http://dreamhost.com">DreamHost</a>. Forjado con <a href="https://github.com/hyde/hyde">Hyde 0.8</a></p>
 	           <p>&copy; 2010-2012 Cidadania S. Coop. Galega </p>
 	       </div>
 	   </div>
