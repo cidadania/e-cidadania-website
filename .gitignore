@@ -15,3 +15,4 @@ src/e_cidadania/uploads/*
 src/e_cidadania/static/*
 docs/build/*
 deploy/*
+.hyde_deps
