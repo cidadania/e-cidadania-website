@@ -1,0 +1,17 @@
+*.pyc
+._*
+.DS*
+*.db
+*.db-journal
+*.ps
+*.dvi
+*.toc
+*.log
+*.aux
+_build*
+*~
+.svn*
+src/e_cidadania/uploads/*
+src/e_cidadania/static/*
+docs/build/*
+deploy/*
