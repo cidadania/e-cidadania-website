@@ -23,7 +23,7 @@
 	                <a class="brand" href="/">e-<strong>cidadania</strong></a>
 	                <ul class="nav">
 	                    {% for item in menu %}
-	                        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+	                        <li><a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a></li>
 	                    {% endfor %}
 	                    <form name="selectors" action="" class="pull-left" style="text-align: center;">
                             <select class="small" id="language">
@@ -49,39 +49,41 @@
 	    </div>
 	    
 	    <footer style="background:#FAFAFA;padding-bottom:10px;border-bottom:1px solid #EEE;margin-bottom:15px;">
-	        <div class="row" style="margin:auto;">
+	        <div class="row" style="width:960px;margin:auto;">
 	            
-	            <div class="span4 offset8">
+	            <div class="span4">
 	                <img src="{{ media_url('logo.png') }}" /><br />
 	            </div>
 	            
 	            <div class="span4">
 	                <adress>
 	                    <strong>Páginas</strong><br />
-	                        Inicio<br />
-  	                        Blog<br />
-  	                        Historia<br />
-  	                        Descargas<br />
-  	                        Desarrollo<br />
+	                    {% for item in menu %}
+	                        <a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a><br />
+	                    {% endfor %}
 	                </adress>
 	            </div>
 	            
 	            <div class="span4">
 	                <strong>Contacto</strong><br />
-	                Lere leré<br />
+	                <a href="#">Listas de correo</a><br />
+	                <a href="http://dev.ecidadania.org">Incidencias</a><br />
+	                <a href="mailto:soporte@ecidadania.org">Soporte</a>
 	            </div>
 	            
 	            <div class="span4">
-	                <strong>Otro wiget</strong><br />
-	                Algo tiene que ir aquí, no?
+	                <strong>+info</strong><br />
+	                {% for item in extra_pages %}
+	                    <a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a><br />
+	                {% endfor %}
 	            </div>
 	       </div>
 	   </footer>
 	   
 	   <div class="row">
 	       <div class="span10 offset8">
-	           <p>Hosteado por <a href="http://dreamhost.com">DreamHost</a>. Forjado con <a href="https://github.com/hyde/hyde">Hyde 0.8</a></p>
-	           <p>&copy; 2010-2012 Cidadania S. Coop. Galega </p>
+	           Hosteado por <a href="http://dreamhost.com">DreamHost</a>. Forjado con <a href="https://github.com/hyde/hyde">Hyde</a><br />
+	           2010-2012 Cidadania S. Coop. Galega
 	       </div>
 	   </div>
 	   

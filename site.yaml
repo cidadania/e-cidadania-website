@@ -46,6 +46,17 @@ context:
                 description: Documentación de e-cidadania
                 type: page
                 url: http://docs.ecidadania.org
+        extra_pages:
+            -
+                name: Colaboradores
+                description: Equipo y colaboradores
+                type: page
+                url: team
+            -
+                name: Cidadania
+                description: Web de cidadania
+                type: page
+                url: http://cidadania.coop                
 meta:
     nodemeta: meta.yaml
 sorter:
