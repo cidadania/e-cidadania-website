@@ -2,7 +2,7 @@
     TWITTER BOOTSTRAP OVERRIDES
 */
 
-/*.topbar-inner,.topbar .fill{*/
+/*.navbar-inner,.navbar .container{*/
 /*    background-color: #3A3;*/
 /*    background-color: #33AA33;*/
 /*    background-repeat: repeat-x;*/
@@ -18,6 +18,10 @@
 /*    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
 /*    box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
 /*}*/
+
+body {
+    background-color: #FAFAFA;
+}
 
 /*
     END OVERRIDES
@@ -37,6 +41,20 @@
 }
 
 .social {
-    float: right;
-    display: inline;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.pagetitle {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #F1F1F1;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
