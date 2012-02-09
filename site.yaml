@@ -22,15 +22,15 @@ context:
                 type: page
                 url: /
             -
-                name: Blog
-                description: Blog
+                name: Weblog
+                description: Weblog
                 type: node
                 url: blog
             -
-                name: Historia
-                description: Historia
+                name: Comunidad
+                description: Comunidad
                 type: page
-                url: history
+                url: community
             -
                 name: Descarga
                 description: Descargar e-cidadania
@@ -57,6 +57,12 @@ context:
                 description: Web de cidadania
                 type: page
                 url: http://cidadania.coop                
+            -
+                name: Historia
+                description: Historia
+                type: page
+                url: history
+                
 meta:
     nodemeta: meta.yaml
 sorter:

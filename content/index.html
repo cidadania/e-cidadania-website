@@ -4,15 +4,43 @@ default_block: container
 title: e-cidadania | Participación ciudadana
 ---
 
-<div class="hero-unit" style="margin-top:40px;">
-    <h1>Prueba e-cidadania</h1>
-    <img class="thumbnail" style="float:right;" src="http://placehold.it/330x230" alt="Placeholder" />
-    <p>e-cidadania es una herramienta de e-participación para ciudadanos, ciudadanas,
-       asociaciones, cooperativas, administraciones... con una novedosa metodología de
-       debates, sistema de propuestas, votaciones, creación de espacios específicos
-       para cada proceso así como otras muchas funciones.
-    </p>
-    <p><a class="btn btn-large btn-success" href="http://demo.ecidadania.org">Demostración &raquo;</a></p>
+<div class="row" style="margin-top:40px;">
+    <div class="span12">
+        <div id="carousel" class="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{ media_url('img/slide1.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Plataforma completa</h4>
+                      <p>e-cidadania es el primer esfuerzo por intentar llevar un proceso participativo completo combinando participación online con presencial. Desde los primeros debates, pasando por las propuestas y votaciones, todo se realiza dentro de la propia plataforma, para no tener que andar de un lado para otro.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ media_url('img/slide2.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Sistema de debates ordeando</h4>
+                      <p>e-cidadania incluye un nuevo sistema de debates para dejar atrás los sistemas lineales de discusión, ¡es hora de llegar a conclusiones!.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ media_url('img/slide3.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Software libre</h4>
+                      <p>Con todas sus letras. Toda la plataforma, desde el código fuente, pasando por su diseño, documentación, herramientas auxiliares, etc. está licenciado bajo GPLv3 para garantizar su libertad perpetua.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+        </div>
+        <script type="text/javascript">
+            $('.carousel').carousel({
+                interval:8000
+            })
+        </script>
+    </div>
 </div>
 
 <div class="row">
@@ -20,7 +48,7 @@ title: e-cidadania | Participación ciudadana
         <h2>Software libre</h2>
 	    <p>e-cidadania ha sido creado bajo la licencia GPLv3 que garantiza que es
 	    oftware libre, así como que cualquier extensión también será libre en el futuro.</p>
-	    <p><a class="btn btn-danger btn-large" href="#">Ver repositorio &raquo;</a></p>
+	    <p><a class="btn btn-danger btn-large" href="http://github.com/cidadania/e-cidadania">Ver repositorio &raquo;</a></p>
 	</div>
 	<div class="span4">
 	    <h2>Internacionalización</h2>
