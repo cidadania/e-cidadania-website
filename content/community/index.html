@@ -15,10 +15,37 @@ title: Comunidad de e-cidadania
 <div class="row">
     <div class="span4">
         <h3>Twitter</h3>
-        <ul class="unstyled">
-            <li>Oscar Carballal Prego</li>
-            <li>Pedro Gracia</li>
-        </ul>
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+            new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 5,
+                interval: 6000,
+                width: 250,
+                height: 300,
+                theme: {
+                    shell: {
+                        background: '#dddddc',
+                        color: '#999999'
+                    },
+                    tweets: {
+                        background: '#ffffff',
+                        color: '#000000',
+                        links: '#226D42'
+                    }
+                },
+                features: {
+                    scrollbar: false,
+                    loop: false,
+                    live: false,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: false,
+                    behavior: 'all'
+                }
+            }).render().setUser('ecidadaniafloss').start();
+        </script>
     </div>
     <div class="span4">
         <h3>Identi.ca</h3>
