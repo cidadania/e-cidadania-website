@@ -25,17 +25,17 @@ context:
                 name: Weblog
                 description: Weblog
                 type: node
-                url: blog
+                url: /blog
             -
                 name: Comunidad
                 description: Comunidad
                 type: page
-                url: community
+                url: /community
             -
                 name: Descarga
                 description: Descargar e-cidadania
                 type: page
-                url: download
+                url: /download
             -
                 name: Desarrollo
                 description: Trac e-cidadania
@@ -56,7 +56,7 @@ context:
                 name: Colaboradores
                 description: Equipo y colaboradores
                 type: page
-                url: team
+                url: /team
             -
                 name: Cidadania
                 description: Web de cidadania
@@ -66,7 +66,7 @@ context:
                 name: Historia
                 description: Historia
                 type: page
-                url: history
+                url: /history
                 
 meta:
     nodemeta: meta.yaml
