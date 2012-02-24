@@ -46,6 +46,11 @@ context:
                 description: Documentación de e-cidadania
                 type: page
                 url: http://docs.ecidadania.org
+            -
+                name: Demostración
+                description: Demostración de e-cidadania
+                type: page
+                url: http://demo.ecidadania.org
         extra_pages:
             -
                 name: Colaboradores
@@ -67,6 +72,7 @@ meta:
     nodemeta: meta.yaml
 sorter:
     publishingtime:
+        reverse: true
         attr:
             meta.created
         filters:

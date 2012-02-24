@@ -48,17 +48,42 @@ title: Comunidad de e-cidadania
         </script>
     </div>
     <div class="span4">
-        <h3>Identi.ca</h3>
+        <h3>Canal de desarrollo</h3>
+        <h6>Información</h6>
         <ul class="unstyled">
-            <li>Antón Meixome</li>
-            <li>Armando Broz Fidalgo</li>
-            <li>Luisa Vicente Comojo</li>
-            <li>Rosa Muñiz Castro</li>
+            <li>Este canal es sólo de información, si quieres seguirnos sigue
+               a @ecidadaniafloss</li>
         </ul>
-        <h6>Corrección</h6>
-        <ul class="unstyled">
-            <li>Ana Lorenzo Vila</li>
-        </ul>
+        <script>
+            new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 5,
+                interval: 6000,
+                width: 250,
+                height: 300,
+                theme: {
+                    shell: {
+                        background: '#dddddc',
+                        color: '#999999'
+                    },
+                    tweets: {
+                        background: '#ffffff',
+                        color: '#000000',
+                        links: '#226D42'
+                    }
+                },
+                features: {
+                    scrollbar: false,
+                    loop: false,
+                    live: false,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: false,
+                    behavior: 'all'
+                }
+            }).render().setUser('ecidadaniadev').start();
+        </script>
     </div>
     <div class="span4">
         <h3>Posts de la comunidad</h3>
