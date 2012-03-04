@@ -1,0 +1,53 @@
+language: es
+menu:
+    -
+        name: Home
+        description: Homepage
+        type: redirect
+        url: /
+    -
+        name: Weblog
+        description: Weblog
+        type: redirect
+        url: /es/blog
+    -
+        name: Community
+        description: e-cidadania community
+        type: page
+        url: community
+    -
+        name: Download
+        description: Download e-cidadania
+        type: page
+        url: download
+    -
+        name: Development
+        description: e-cidadania Trac
+        type: redirect
+        url: http://dev.ecidadania.org
+    -
+        name: Documentation
+        description: e-cidadania documentation
+        type: redirect
+        url: http://docs.ecidadania.org
+    -
+        name: Demo
+        description: e-cidadania demonstration
+        type: page
+        url: demo
+extra_pages:
+    -
+        name: Collaborators
+        description: Team and collaborators
+        type: page
+        url: team
+    -
+        name: Cidadania
+        description: Web de cidadania
+        type: redirect
+        url: http://cidadania.coop
+    -
+        name: History
+        description: History
+        type: page
+        url: history

@@ -23,9 +23,13 @@
 	            <div class="container">
 	                <a class="brand" href="/">e-<strong>cidadania</strong></a>
 	                <ul class="nav">
-	                    {% for item in menu %}
-	                        <li><a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a></li>
-	                    {% endfor %}
+	                    {% for item in resource.meta.menu %}
+	                        {% if item.type == "redirect" %}
+	                            <li><a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a></li>
+	                        {% else %}
+                                <li><a href="{{ content_url(resource.meta.language + '/' + item.url) }}" title="{{ item.description }}">{{ item.name }}</a></li>
+                            {% endif %}
+                        {% endfor %}
 	                </ul>
 	                <ul class="nav pull-right">
 	                	<li><a href="http://twitter.com/#!/{{ tweet_via }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/twitter.png') }}" /></a></li>
@@ -60,9 +64,13 @@
 	            <div class="span3">
 	                <adress>
 	                    <strong>Páginas</strong><br />
-	                    {% for item in menu %}
-	                        <a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a><br />
-	                    {% endfor %}
+	                    {% for item in resource.meta.menu %}
+	                        {% if item.type == "redirect" %}
+	                            <a href="{{ item.url }}">{{ item.name }}</a><br />
+	                        {% else %}
+                                <a href="{{ content_url(resource.meta.language + '/' + item.url) }}">{{ item.name }}</a><br />
+                            {% endif %}
+                        {% endfor %}
 	                </adress>
 	            </div>
 	            
@@ -75,9 +83,13 @@
 	            
 	            <div class="span3">
 	                <strong>+info</strong><br />
-	                {% for item in extra_pages %}
-	                    <a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a><br />
-	                {% endfor %}
+	                {% for item in resource.meta.extra_pages %}
+	                    {% if item.type == "redirect" %}
+	                        <a href="{{ item.url }}" title="{{ item.description }}">{{ item.name }}</a><br />
+	                    {% else %}
+                            <a href="{{ content_url(resource.meta.language + '/' + item.url) }}" title="{{ item.description }}">{{ item.name }}</a><br />
+                        {% endif %}
+                    {% endfor %}
 	            </div>
 	       </div>
 	   </footer>

@@ -1,0 +1,79 @@
+---
+extends: base.j2
+default_block: container
+language: es
+uuid: bcc50150-6606-11e1-b86c-0800200c9a66
+title: e-cidadania | Participación ciudadana
+---
+
+<div class="row" style="margin-top:40px;">
+    <div class="span12">
+        <div id="carousel" class="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{ media_url('img/slide1.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Plataforma completa</h4>
+                      <p>e-cidadania es el primer esfuerzo por intentar llevar un proceso participativo completo combinando participación online con presencial. Desde los primeros debates, pasando por las propuestas y votaciones, todo se realiza dentro de la propia plataforma, para no tener que andar de un lado para otro.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ media_url('img/slide2.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Sistema de debates ordeando</h4>
+                      <p>e-cidadania incluye un nuevo sistema de debates para dejar atrás los sistemas lineales de discusión, ¡es hora de llegar a conclusiones!.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ media_url('img/slide3.jpg')}}" />
+                    <div class="carousel-caption">
+                      <h4>Software libre</h4>
+                      <p>Con todas sus letras. Toda la plataforma, desde el código fuente, pasando por su diseño, documentación, herramientas auxiliares, etc. está licenciado bajo GPLv3 para garantizar su libertad perpetua.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+        </div>
+        <script type="text/javascript">
+            $('.carousel').carousel({
+                interval:10000
+            })
+        </script>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="span4">
+        <h2>Software libre</h2>
+	    <p>e-cidadania ha sido creado bajo la licencia GPLv3 que garantiza que es
+	    oftware libre, así como que cualquier extensión también será libre en el futuro.</p>
+	    <p><a class="btn btn-large" href="http://github.com/cidadania/e-cidadania">Ver repositorio &raquo;</a></p>
+	</div>
+	<div class="span4">
+	    <h2>Demostración</h2>
+	    <p>Si quieres probar e-cidadania antes de decidirte a usarlo, puedes probar la instalación
+	       de demostración que tenemos en nuestra web.</p>
+	    <p><a class="btn btn-danger btn-large" href="/demo">Demostración &raquo;</a></p>
+	</div>
+	<div class="span4">
+	    <h2>Échanos una mano</h2>
+	    <p>e-cidadania necesita gente para seguir creciendo. No hace falta que seas
+	    programador, ni siquiera hace falta que tengas conocimientos técnicos, puedes
+	    ayudarnos de muchas otras formas.</p>
+	    <p><a href="http://dev.ecidadania.org" class="btn btn-primary btn-large">Colabora</a></p>
+    </div>
+</div>
+
+<div id="row well">
+    <div class="partners">
+        <a href="http://novagaliciabanco.com"><img src="{{ media_url('img/logo3.png') }}" /></a>
+        <a href="http://ferrol.es"><img src="{{ media_url('img/logo4.png') }}" /></a>
+        <a href="http://cesga.es"><img src="{{ media_url('img/logo5.png') }}" /></a>
+        <a href="http://xunta.es"><img src="{{ media_url('img/logo6.png') }}" /></a>
+    </div>
+</div>
