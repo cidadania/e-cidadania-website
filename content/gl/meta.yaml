@@ -1,18 +1,20 @@
-language: es
+language: gl
+footermenu: Páxinas
+footercontact: Contacto
 menu:
     -
         name: Inicio
-        description: Página de inicio
+        description: Páxina de inicio
         type: redirect
-        url: /
+        url: /gl
     -
         name: Weblog
         description: Weblog
         type: node
-        url: blog
+        url: /blog
     -
-        name: Comunidad
-        description: Comunidad
+        name: Comunidade
+        description: Comunidade
         type: page
         url: community
     -
@@ -21,7 +23,7 @@ menu:
         type: page
         url: download
     -
-        name: Desarrollo
+        name: Desenvolvemento
         description: Trac e-cidadania
         type: redirect
         url: http://dev.ecidadania.org
@@ -38,7 +40,7 @@ menu:
 extra_pages:
     -
         name: Colaboradores
-        description: Equipo y colaboradores
+        description: Equipo e colaboradores
         type: page
         url: team
     -
@@ -51,3 +53,19 @@ extra_pages:
         description: Historia
         type: page
         url: history
+contact_links:
+    -
+        name: Listas de correo
+        description: Listas de correo
+        type: page
+        url: mailing
+    -
+        name: Incidencias
+        description: Incidencias e problemas
+        type: redirect
+        url: http://dev.ecidadania.org
+    -
+        name: Soporte
+        description: Axuda e soporte
+        type: redirect
+        url: mailto:support@ecidadania.org
