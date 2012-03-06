@@ -11,7 +11,7 @@ menu:
         name: Weblog
         description: Weblog
         type: node
-        url: /blog
+        url: /es/blog
     -
         name: Comunidade
         description: Comunidade

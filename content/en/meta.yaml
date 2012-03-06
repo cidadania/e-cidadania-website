@@ -11,7 +11,7 @@ menu:
         name: Weblog
         description: Weblog
         type: redirect
-        url: /blog
+        url: /es/blog
     -
         name: Community
         description: e-cidadania community
