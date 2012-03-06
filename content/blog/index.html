@@ -1,0 +1,17 @@
+---
+title: e-cidadania blog
+extends: listing.j2
+language: es
+uuid: fe3af860-6606-11e1-b86c-0800200c9a66
+default_block: container
+---
+
+<h1 class="pagetitle">e-cidadania blog</h1>
+
+<div class="row">
+    <div class="span12">
+        {% for res in site.content.walk_resources_sorted_by_publishingtime() %}
+            {{ render_excerpt(res) }}
+        {% endfor %} 
+    </div>
+</div>

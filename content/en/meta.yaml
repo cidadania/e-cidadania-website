@@ -1,15 +1,17 @@
-language: es
+language: en
+footermenu: Pages
+footercontact: Contact
 menu:
     -
         name: Home
         description: Homepage
         type: redirect
-        url: /
+        url: /en
     -
         name: Weblog
         description: Weblog
         type: redirect
-        url: /es/blog
+        url: /blog
     -
         name: Community
         description: e-cidadania community
@@ -51,3 +53,19 @@ extra_pages:
         description: History
         type: page
         url: history
+contact_links:
+    -
+        name: Mailing lists
+        description: Mailing lists
+        type: page
+        url: mailing
+    -
+        name: Issues
+        description: Tickets and issues
+        type: redirect
+        url: http://dev.ecidadania.org
+    -
+        name: Support
+        description: Help and support
+        type: redirect
+        url: mailto:support@ecidadania.org

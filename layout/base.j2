@@ -32,18 +32,13 @@
                         {% endfor %}
 	                </ul>
 	                <ul class="nav pull-right">
-	                	<li><a href="http://twitter.com/#!/{{ tweet_via }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/twitter.png') }}" /></a></li>
+	                	<!--<li><a href="http://twitter.com/#!/{{ tweet_via }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/twitter.png') }}" /></a></li>
 	                    <li><a href="{{ facebook }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/facebook.png') }}" /></a></li>
-	                    <!-- <li><a href="{{ identica }}"><img src="" /></a></li> -->
-	                    <li><a  href="{{ gplus }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/gplus.png') }}" /></a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="lang-es">Español</a></li>
-                                <li><a href="lang-en">English</a></li>
-                                <li><a href="lang-gl">Galego</a></li>
-                            </ul>
-                        </li>
+	                    <li><a href="{{ identica }}"><img src="" /></a></li>
+  	                    <li><a href="{{ gplus }}" style="padding-bottom: 0px;padding-top: 7px;"><img src="{{ media_url('img/gplus.png') }}" /></a></li>-->
+	                    <li><a href="/" style="padding-bottom: 0px;padding-top: 12px;"><img src="{{ media_url('img/flag_spain.gif') }}" /></a></li>
+	                    <li><a href="/gl" style="padding-bottom: 0px;padding-top: 12px;"><img src="{{ media_url('img/flag_galicia.gif') }}" /></a></li>
+	                    <li><a href="/en" style="padding-bottom: 0px;padding-top: 12px;"><img src="{{ media_url('img/flag_england.gif') }}" /></a></li>
                     </ul>
 	            </div>
 	        </div>
@@ -63,7 +58,7 @@
 	            
 	            <div class="span3">
 	                <adress>
-	                    <strong>Páginas</strong><br />
+	                    <strong>{{ resource.meta.footermenu }}</strong><br />
 	                    {% for item in resource.meta.menu %}
 	                        {% if item.type == "redirect" %}
 	                            <a href="{{ item.url }}">{{ item.name }}</a><br />
@@ -75,10 +70,15 @@
 	            </div>
 	            
 	            <div class="span3">
-	                <strong>Contacto</strong><br />
-	                <a href="#">Listas de correo</a><br />
-	                <a href="http://dev.ecidadania.org">Incidencias</a><br />
-	                <a href="mailto:soporte@ecidadania.org">Soporte</a>
+	                
+	                <strong>{{ resource.meta.footercontact }}</strong><br />
+	                {% for item in resource.meta.contact_links %}
+	                    {% if item.type == "redirect" %}
+	                        <a href="{{ item.url }}">{{ item.name }}</a><br />
+	                    {% else %}
+                            <a href="{{ content_url(resource.meta.language + '/' + item.url) }}">{{ item.name }}</a><br />
+                        {% endif %}
+                    {% endfor %}
 	            </div>
 	            
 	            <div class="span3">
