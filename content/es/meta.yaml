@@ -55,8 +55,8 @@ extra_pages:
         url: history
 contact_links:
     -
-        name: Listas de correo
-        description: Listas de correo
+        name: Listas de correo e iRC
+        description: Listas de correo e iRC
         type: page
         url: mailing
     -

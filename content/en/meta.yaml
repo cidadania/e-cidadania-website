@@ -55,8 +55,8 @@ extra_pages:
         url: history
 contact_links:
     -
-        name: Mailing lists
-        description: Mailing lists
+        name: Mailing lists and IRC
+        description: Mailing lists and IRC
         type: page
         url: mailing
     -
