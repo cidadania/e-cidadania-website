@@ -6,12 +6,12 @@ menu:
         name: Inicio
         description: Páxina de inicio
         type: redirect
-        url: /gl
+        url: /gl/
     -
         name: Weblog
         description: Weblog
         type: node
-        url: /es/blog
+        url: http://blog.ecidadania.org
     -
         name: Comunidade
         description: Comunidade
@@ -26,7 +26,7 @@ menu:
         name: Desenvolvemento
         description: Trac e-cidadania
         type: redirect
-        url: http://dev.ecidadania.org
+        url: http://code.ecidadania.org
     -
         name: Documentación
         description: Documentación de e-cidadania
@@ -63,9 +63,9 @@ contact_links:
         name: Incidencias
         description: Incidencias e problemas
         type: redirect
-        url: http://dev.ecidadania.org
+        url: http://code.ecidadania.org
     -
         name: Soporte
         description: Axuda e soporte
         type: redirect
-        url: mailto:support@ecidadania.org
+        url: mailto:info@ecidadania.org

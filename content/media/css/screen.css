@@ -1,26 +1,16 @@
-/*
-    TWITTER BOOTSTRAP OVERRIDES
-*/
 
-/*.navbar-inner,.navbar .container{*/
-/*    background-color: #3A3;*/
-/*    background-color: #33AA33;*/
-/*    background-repeat: repeat-x;*/
-/*    background-image: -khtml-gradient(linear, left top, left bottom, from(#33AA33), to(#33AA33));*/
-/*    background-image: -moz-linear-gradient(top, #33AA33, #33AA33);*/
-/*    background-image: -ms-linear-gradient(top, #33AA33, #33AA33);*/
-/*    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33AA33), color-stop(100%, #33AA33));*/
-/*    background-image:-webkit-linear-gradient(top, #33AA33, #33AA33);*/
-/*    background-image:-o-linear-gradient(top, #33AA33, #33AA33);*/
-/*    background-image:linear-gradient(top, #33AA33, #33AA33);*/
-/*    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33AA33', endColorstr='#33AA33', GradientType=0);*/
-/*    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
-/*    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
-/*    box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);*/
-/*}*/
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url('../font/museo-sans-300-webfont.eot');
+  src: url('../font/museo-sans-300-webfont.eot?#iefix') format('eot'), url('../font/museo-sans-300-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    background-color: #FAFAFA;/*#CDE9CA;/*#CBE86B;*/
+    background-color: #F5F5F5; /*CDE9CA #CBE86B*/
+    font-family: "MuseoSans";
 }
 
 /*
@@ -58,4 +48,8 @@ footer {
     border-bottom: 1px solid #EEE;
     margin-bottom: 15px;
     margin-top: 20px;
+}
+
+.carousel img {
+    max-width: 100%;
 }
