@@ -1,15 +1,15 @@
 
-@font-face {
+/*@font-face {
   font-family: "MuseoSans";
   src: url('/media/font/museo-sans-300-webfont.eot');
   src: url('/media/font/museo-sans-300-webfont.eot?#iefix') format('eot'), url('../font/museo-sans-300-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 body {
     background-color: #F5F5F5; /*CDE9CA #CBE86B*/
-    font-family: 'MuseoSans', sans-serif;
+    /*font-family: 'MuseoSans', sans-serif;*/
 }
 
 /*
