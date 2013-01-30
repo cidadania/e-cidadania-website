@@ -75,7 +75,7 @@ context:
                 
 meta:
     nodemeta: meta.yaml
-    language: es
+    language: en
 
 sorter:
     publishingtime:

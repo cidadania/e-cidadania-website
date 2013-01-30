@@ -36,7 +36,7 @@ menu:
         name: Demo
         description: e-cidadania demonstration
         type: page
-        url: demo
+        url: http://demo.ecidadania.org
 extra_pages:
     -
         name: Collaborators
