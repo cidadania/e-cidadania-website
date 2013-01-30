@@ -1,5 +1,4 @@
 
-
 @font-face {
   font-family: "MuseoSans";
   src: url('../font/museo-sans-300-webfont.eot');
@@ -10,7 +9,7 @@
 
 body {
     background-color: #F5F5F5; /*CDE9CA #CBE86B*/
-    font-family: "MuseoSans";
+    font-family: 'Basic', sans-serif;
 }
 
 /*
