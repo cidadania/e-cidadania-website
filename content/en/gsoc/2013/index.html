@@ -1,0 +1,130 @@
+---
+extends: base.j2
+default_block: container
+language: en
+uuid: 436fbb62-6607-11e1-b86c-0800200c9a66
+title: e-cidadania | Google Summer of Code 2013
+---
+
+<h1 class="pagetitle">Google Summer of Code 2013 | Ideas Page</h1>
+
+<div class="row">
+    <div class="span4" style="position:fixed;top:165px;">
+        <h3>Index</h3>
+        <ul class="unstyled well">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#guidelines">Guidelines</a></li>
+            <li><a href="#guidelines">Desirable prerequisites</a></li>
+            <li><a href="/en/gsoc/2013/students.html">Information for students</a></li>
+            <li><a href="#ideas">Ideas</a></li>
+            <ul class="gsocsubmenu">
+                <li><a href="#core">Core</a></li>
+                <ul class="gsocsubmenu">
+                    <li><a href="#project1">Enhance security</a></li>
+                    <li><a href="#project2">Graphical status of the process</a></li>
+					<li><a href="#project3">Create RESful API</li>
+                </ul>
+                <li><a href="#modules">Modules</a></li>
+                <ul class="gsocsubmenu">
+                    <li><a href="#project4">Automated reports</a></li>
+                    <li><a href="#project5">Enhance debates module</a></li>
+                    <li><a href="#project6">Make debates usable on mobile devices</a></li>
+                </ul>
+                <li><a href="#testing">Testing</a></li>
+                <ul class="gsocsubmenu">
+                    <li><a href="#project7">Create detailed unit tests</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    <div class="span4">.</div>
+    <div class="span8">
+        <h3><a name="introduction">Introduction</a></h3>
+        <p>These ideas are main tasks for the e-cidadania project. E-cidadania project is very young, it has only 1 year of development
+        so it does not have an active community that supports it...yet. In this project the students will find a perfect test field for
+        them, since they can contribute to the project without having any fear to be wrong, and also have the chance to participate in
+        the early stage of a project.</p>        
+        <h3><a name="guidelines">Guidelines</a></h3>
+        <p>Being an accepted student for the e-cidadania project is not as competitive as in KDE, but don't relax, you will have to
+        adapt participative methodologies to an online (and therefore more limited) platform. We have the challenge to create a very
+        versatile platform, and that is not easy.</p>
+        <p>There are some established guidelines when coding and documenting in e-cidadania. That rules are a must, you can see them in
+        <a href="http://docs.ecidadania.org/en/latest/dev/styleguide.html">the project documentation</a></p>
+        <p>If for some reason you can't contact your mentor within 48 hours, you can try to contact the backup administrator, Armando Broz.
+        Don't expect technical feedback from him.</p>
+        <h3><a name="guidelines">Desirable prerequisites</a></h3>
+        <p>The prerequisites of the e-cidadania platform are mostly the same for every project, they just vary in tiny little specs. Take in
+        mind that even if we say "prerequisites", they are not decisive for selecting students. Students with no experience are welcome too.</p>
+        <p>The students are desirable to have:</p>
+        <ul>
+            <li>Mid-level knowledge of the Python programming language</li>
+            <li>Some knowledge of the Django framework, previous knowledge is OK but it won't be decisive.</li>
+            <li>Good or very good knowledge of web technologies: CSS 2 and 3, HTML4, JavaScript, jQuery.</li>
+        </ul>
+        <p>We repeat that this requisites are not decisive, after all every student must learn before anything, so don't be afraid to apply,
+        your mentor is there to teach you :)</p>
+        
+        <h3><a name="ideas">Ideas</a></h3>
+        <div class="well">
+            <h4>We actively encourage students to publish their own ideas. If you feel like this list of ideas is not for you, but have
+             another great idea you think it will fit in e-cidadania, please make us know! Send an email to info@ecidadania.org
+             with the idea template filled and we will publish it <strong>immediately</strong>.</h4><br />
+            <h4>Ideas templates</h4>
+            <ul class="unstyled">
+                <li>Project name:</li>
+                <li>Knowledge required:</li>
+                <li>Description and main goals</li>
+            </ul>
+        </div>
+        
+        <h3><a name="core">Core</a></h3>
+        
+            <h4><a name="project1">Enhance AJAX security</a></h4>
+            <p><strong>Knowledge required:</strong> Django, AJAX, jQuery</p>
+            <p>The main goal is to strengthen the user permissions and access to the platform. The current security with files, spaces,
+             and most of the user interactions are vaguely filtered and mostly with hardcoded instructions. The platform must use all
+             the mechanisms available in the django framework to guarantee the roles and permissions effectiveness in the platform.</p>
+            
+            <h4><a name="project2">Graphical status of the process</a></h4>
+            <p><strong>Knowledge required:</strong> Django, jQuery</p>
+            <p>It would be nice to have some kind of system that allows the user to know graphically where and when h is on the process. Since every
+            process can have multiple concurrent debates, proposals, or voting, the user can get easily lost. Some kind of timeline, at git/mercurial/bazaar, etc.
+            style would be great. Every debate, proposal, etc. would be a branch, and they would be interconnected (meaning the relations between them) and at
+            any time the user can view where he is, just looking at the "you are here" spot.</p>
+
+			<h4><a name="project3">Create RESTful API</a></h4>
+			<p><strong>Knowledge required:</strong> Django, django-piston</p>
+			<p>Modern internet services should provide application interface for
+			possible clients. Goal is to create API for e-cidadania project using
+			django-piston framework. RESTful API allows to create statless,
+			coherent client-server solution.</p>
+        
+        <h3><a name="modules">Modules</a></h3>
+        
+            <h4><a name="project4">Automated reports</a></h4>
+            <p><strong>Knowledge required:</strong> Reporting tools, Django, Python</p>
+            <p>The automated reports system is one of the key features of e-cidadania. This tool must generate a PDF output on the space
+            archive when finishing a process or on demand if the administrator requires it. There must be a predefined data model that
+            will be automatically used after the process is closed, but the administrator must be able to specify the information needed
+            to generate the report.</p>
+            
+            <h4><a name="project5">Enhance debates module</a></h4>
+            <p><strong>Knowledge required:</strong> Django, AJAX, jQuery</p>
+            <p>It would be great if debates system supported interaction between some other modules like the proposals module and
+            allowed media content and comments in the notes system.</p>
+            
+            <h4><a name="project6">Make debates usable on mobile devices</a></h4>
+            <p><strong>Knowledge required:</strong> Responsive design, CSS, jQuery</p>
+            <p>Actual debate modules design allows it to be used almost in every place, but not in the current smartphones, where the
+            "drag&drop" feature is gesture based. The idea is to develop a responsive design that when detects a smartphone (or
+            a potential one) changes the design of the debate system allowing a better interaction to the user from their smartphone.</p>
+            
+        <h3><a name="testing">Testing</a></h3>
+        
+            <h4><a name="project7">Create unit tests</a></h4>
+            <p><strong>Knowledge required:</strong> Django, unittest2</p>
+            <p>e-cidadania lacks of any unit test. The objective would be to create a complete test suite for the basic modules,
+            so that guarantees its stability. The test would be realized with the test framework provided by django, using python's
+            unittest.</p>            
+    </div>
+</div>

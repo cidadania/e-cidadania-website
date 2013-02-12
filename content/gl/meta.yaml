@@ -48,11 +48,6 @@ extra_pages:
         description: Web de cidadania
         type: redirect
         url: http://cidadania.coop
-    -
-        name: Historia
-        description: Historia
-        type: page
-        url: history
 contact_links:
     -
         name: Listas de correo

@@ -67,11 +67,6 @@ context:
                 description: Web de cidadania
                 type: page
                 url: http://cidadania.coop                
-            -
-                name: Historia
-                description: Historia
-                type: page
-                url: /history
                 
 meta:
     nodemeta: meta.yaml
