@@ -20,19 +20,23 @@ title: e-cidadania | Google Summer of Code 2013
             <ul class="gsocsubmenu">
                 <li><a href="#core">Core</a></li>
                 <ul class="gsocsubmenu">
-                    <li><a href="#project1">Enhance security</a></li>
+                    <li><a href="#project1">Enhance AJAX security</a></li>
                     <li><a href="#project2">Graphical status of the process</a></li>
 					<li><a href="#project3">Create RESful API</li>
+                    <li><a href="#project4">Enhance permission validations</a></li>
                 </ul>
                 <li><a href="#modules">Modules</a></li>
                 <ul class="gsocsubmenu">
-                    <li><a href="#project4">Automated reports</a></li>
                     <li><a href="#project5">Enhance debates module</a></li>
                     <li><a href="#project6">Make debates usable on mobile devices</a></li>
                 </ul>
                 <li><a href="#testing">Testing</a></li>
                 <ul class="gsocsubmenu">
                     <li><a href="#project7">Create detailed unit tests</a></li>
+                </ul>
+                <li><a href="#deployment">Deployment</a></li>
+                <ul class="gsocsubmenu">
+                    <li><a href="#project8">Create automatic deploy system for large infraestructures</a></li>
                 </ul>
             </ul>
         </ul>
@@ -98,15 +102,14 @@ title: e-cidadania | Google Summer of Code 2013
 			possible clients. Goal is to create API for e-cidadania project using
 			django-piston framework. RESTful API allows to create statless,
 			coherent client-server solution.</p>
+
+            <h4><a name="project4">Enhance permission validations</a></h4> <span class="label label-info">Featured</span>
+            <p><strong>Knowledge required:</strong> Django, django-guardian</p>
+            <p>At this moment, e-cidadania runs a simple permission system that is not efficient at all, it's difficult to understand, and required ad-hoc validations
+            for most views. This project consists into replacing the current system by django-guardian, allowing per object permissions and a more coherent and easier
+            to read code.</p>
         
         <h3><a name="modules">Modules</a></h3>
-        
-            <h4><a name="project4">Automated reports</a></h4>
-            <p><strong>Knowledge required:</strong> Reporting tools, Django, Python</p>
-            <p>The automated reports system is one of the key features of e-cidadania. This tool must generate a PDF output on the space
-            archive when finishing a process or on demand if the administrator requires it. There must be a predefined data model that
-            will be automatically used after the process is closed, but the administrator must be able to specify the information needed
-            to generate the report.</p>
             
             <h4><a name="project5">Enhance debates module</a></h4>
             <p><strong>Knowledge required:</strong> Django, AJAX, jQuery</p>
@@ -121,10 +124,18 @@ title: e-cidadania | Google Summer of Code 2013
             
         <h3><a name="testing">Testing</a></h3>
         
-            <h4><a name="project7">Create unit tests</a></h4>
+            <h4><a name="project7">Create detailed unit tests</a></h4>
             <p><strong>Knowledge required:</strong> Django, unittest2</p>
             <p>e-cidadania lacks of any unit test. The objective would be to create a complete test suite for the basic modules,
             so that guarantees its stability. The test would be realized with the test framework provided by django, using python's
-            unittest.</p>            
+            unittest.</p>
+
+        <h3><a name="deployment">Deployment</a></h3>
+
+            <h4><a name="project8">Create automatic deploy system for large infraestructures</a></h4>
+            <p><strong>Knowledge required:</strong> Python, bash, fabric, buildout</p>
+            <p>It would be nice to have mechanisms for automated deploy for e-cidadania. A system that allow to deploy
+            e-cidadania remotely with minor human intervention it is HIGH desirable. Using Fabric for communication with
+            the servers and remotely launching Buildout.</p>
     </div>
 </div>
