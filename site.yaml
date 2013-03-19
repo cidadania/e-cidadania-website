@@ -45,7 +45,7 @@ context:
                 name: Desarrollo
                 description: Trac e-cidadania
                 type: page
-                url: http://dev.ecidadania.org
+                url: http://code.ecidadania.org
             -
                 name: Documentación
                 description: Documentación de e-cidadania
